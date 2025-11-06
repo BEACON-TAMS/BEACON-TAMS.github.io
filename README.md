@@ -1,3 +1,3 @@
 # BEACON-TAMS.github.io
 
-testing
+yes i know its shitty but it works hopefully
