@@ -3,6 +3,8 @@ import pandas as pd
 events = pd.read_csv("events.csv")
 
 cards = ""
+trigger = "<!-- CARDS HERE -->"
+endtrigger = "<!-- CARDS END HERE -->"
 
 for i in range(len(events)):
     print(events.loc[i])
@@ -25,7 +27,8 @@ with open("timeline.html", "r") as f:
     f.close()
     
 with open("timeline.html", "w") as f:
-    loc = html.find("<!-- CARDS HERE -->")
-    out = html[:loc] + cards + html[loc:]
+    loc = html.find(trigger) + len(trigger)
+    endloc = html.find(endtrigger)
+    out = html[:loc] + cards + html[endloc:]
     f.write(out)
     f.close()
