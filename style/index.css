@@ -1,0 +1,73 @@
+html, body {
+      height: 100%;
+  margin: 0; /* Remove default body margin */
+}
+
+.h80p {
+    height: 80%;
+}
+
+.h100p {
+    height: 100%;
+}
+
+.cropped {
+    width: 100%;  /* Desired width of the visible area */
+    height: 100%; /* Desired height of the visible area */
+    overflow: hidden; /* Hides everything outside the container box */
+}
+
+.carousel-item img {
+    width: 100%; /* Ensures the image takes the container's width */
+    height: 100%; /* Ensures the image takes the container's height */
+    object-fit: cover; /* Crops the image to fit the container while preserving aspect ratio */
+    object-position: center; /* Centers the visible part of the image (default) */
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.gradient-custom-5 {
+  /* fallback for old browsers */
+  background: #ebbba7;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(235, 187, 167, 1),
+    rgba(207, 199, 248, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(235, 187, 167, 1),
+    rgba(207, 199, 248, 1)
+  );
+}
+
+.gradient-custom-0 {
+  /* fallback for old browsers */
+  background: #ebbba7;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(235, 187, 167, 1),
+    rgba(207, 199, 248, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(235, 187, 167, 1),
+    rgba(207, 199, 248, 1)
+  );
+}
